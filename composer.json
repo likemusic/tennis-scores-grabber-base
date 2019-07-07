@@ -1,0 +1,26 @@
+{
+  "name": "likemusic/xscore-tennis-scrapper",
+  "description": "Scrapper for tennis scores from https://www.xscores.com/tennis/",
+
+  "keywords": [
+    "scrapper",
+    "parser",
+    "score",
+    "grabber",
+    "xscores.com",
+    "tennis"
+  ],
+
+  "license": "private",
+  "type": "project",
+
+  "require": {
+    "php": ">=7.1.*"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "TennisScoreGrabber\\": "src/"
+    }
+  }
+}
