@@ -15,8 +15,7 @@
   "type": "project",
 
   "require": {
-    "php": ">=7.1.0",
-    "psr/http-client": "dev-master"
+    "php": ">=7.1.0"
   },
 
   "autoload": {
