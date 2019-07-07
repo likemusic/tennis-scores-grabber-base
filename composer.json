@@ -1,5 +1,5 @@
 {
-  "name": "likemusic/tennis-scores-grabber",
+  "name": "likemusic/tennis-scores-grabber-base",
   "description": "Base interfaces and classes for grabbing tennis scores.",
   "version": "1.0.0",
   "keywords": [
