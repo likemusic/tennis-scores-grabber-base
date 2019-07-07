@@ -10,14 +10,18 @@
     "xscores.com",
     "tennis"
   ],
-
   "license": "private",
-  "type": "project",
-
+  "type": "library",
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.1.0",
+    "likemusic/simple-http-client": "dev-master"
   },
-
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:likemusic/simple-http-client.git"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "TennisScoreGrabber\\": "src/"

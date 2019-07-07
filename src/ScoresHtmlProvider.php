@@ -3,7 +3,7 @@
 namespace TennisScoreGrabber;
 
 use DateTime;
-use TennisScoreGrabber\Contracts\HttpClientInterface;
+use Likemusic\SimpleHttpClient\HttpClientInterface;
 use TennisScoreGrabber\Contracts\ScoresHtmlProviderInterface;
 use TennisScoreGrabber\Contracts\ScoresUrlProviderInterface;
 
