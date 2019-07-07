@@ -1,11 +1,11 @@
 <?php
 
-namespace TennisScoreGrabber;
+namespace TennisScoresGrabber;
 
 use DateTime;
 use Likemusic\SimpleHttpClient\HttpClientInterface;
-use TennisScoreGrabber\Contracts\ScoresHtmlProviderInterface;
-use TennisScoreGrabber\Contracts\ScoresUrlProviderInterface;
+use TennisScoresGrabber\Contracts\ScoresHtmlProviderInterface;
+use TennisScoresGrabber\Contracts\ScoresUrlProviderInterface;
 
 /**
  * Class ScoresHtmlProvider

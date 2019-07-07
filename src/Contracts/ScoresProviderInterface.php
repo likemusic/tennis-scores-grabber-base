@@ -1,6 +1,6 @@
 <?php
 
-namespace TennisScoreGrabber\Contracts;
+namespace TennisScoresGrabber\Contracts;
 
 use DateTime;
 

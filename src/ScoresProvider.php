@@ -1,11 +1,11 @@
 <?php
 
-namespace TennisScoreGrabber;
+namespace TennisScoresGrabber;
 
 use DateTime;
-use TennisScoreGrabber\Contracts\ScoresProviderInterface;
-use TennisScoreGrabber\Contracts\ScoresHtmlProviderInterface;
-use TennisScoreGrabber\Contracts\ScoresHtmlParserInterface;
+use TennisScoresGrabber\Contracts\ScoresProviderInterface;
+use TennisScoresGrabber\Contracts\ScoresHtmlProviderInterface;
+use TennisScoresGrabber\Contracts\ScoresHtmlParserInterface;
 
 class ScoresProvider implements ScoresProviderInterface
 {
