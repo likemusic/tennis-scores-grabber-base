@@ -36,8 +36,10 @@ abstract class HtmlParser
 
     private function getByXPath($html, $xPathQuery)
     {
+        libxml_use_internal_errors(true);
         $domDocument = new DOMDocument();
         $domDocument->loadHTML($html);
+        libxml_use_internal_errors(false);
 
         $domXPath = new DOMXPath($domDocument);
 
