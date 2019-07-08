@@ -5,14 +5,14 @@ namespace TennisScoresGrabber\Contracts;
 use DateTime;
 
 /**
- * Interface ScoresHtmlProviderInterface
+ * Interface ScoresUrlProviderInterface
  * @package TennisScoreGrabber\Contracts
  */
-interface ScoresHtmlProviderInterface
+interface UrlProviderInterface
 {
     /**
      * @param DateTime $dateTime
      * @return string
      */
-    public function getScoresHtmlByDate(DateTime $dateTime);
+    public function getUrlByDateTime(DateTime $dateTime);
 }

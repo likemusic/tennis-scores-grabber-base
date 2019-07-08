@@ -6,7 +6,7 @@ namespace TennisScoresGrabber\Contracts;
  * Interface ScoresHtmlParserInterface
  * @package TennisScoreGrabber\Contracts
  */
-interface ScoresHtmlParserInterface
+interface HtmlParserInterface
 {
     /**
      * @param string $scoresHtml

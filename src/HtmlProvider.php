@@ -4,14 +4,14 @@ namespace TennisScoresGrabber;
 
 use DateTime;
 use Likemusic\SimpleHttpClient\HttpClientInterface;
-use TennisScoresGrabber\Contracts\ScoresHtmlProviderInterface;
-use TennisScoresGrabber\Contracts\ScoresUrlProviderInterface;
+use TennisScoresGrabber\Contracts\HtmlProviderInterface;
+use TennisScoresGrabber\Contracts\UrlProviderInterface;
 
 /**
  * Class ScoresHtmlProvider
  * @package TennisScoreGrabber
  */
-abstract class ScoresHtmlProvider implements ScoresHtmlProviderInterface
+abstract class HtmlProvider implements HtmlProviderInterface
 {
     /**
      * @var HttpClientInterface
@@ -19,18 +19,18 @@ abstract class ScoresHtmlProvider implements ScoresHtmlProviderInterface
     private $httpClient;
 
     /**
-     * @var ScoresUrlProviderInterface
+     * @var UrlProviderInterface
      */
     private $scoresUrlProvider;
 
     /**
      * ScoresHtmlProvider constructor.
      * @param HttpClientInterface $httpClient
-     * @param ScoresUrlProviderInterface $scoresUrlProvider
+     * @param UrlProviderInterface $scoresUrlProvider
      */
     public function __construct(
         HttpClientInterface $httpClient,
-        ScoresUrlProviderInterface $scoresUrlProvider
+        UrlProviderInterface $scoresUrlProvider
     ) {
         $this->httpClient = $httpClient;
         $this->scoresUrlProvider = $scoresUrlProvider;

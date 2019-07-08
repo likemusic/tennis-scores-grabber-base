@@ -4,29 +4,29 @@ namespace TennisScoresGrabber;
 
 use DateTime;
 use TennisScoresGrabber\Contracts\ScoresProviderInterface;
-use TennisScoresGrabber\Contracts\ScoresHtmlProviderInterface;
-use TennisScoresGrabber\Contracts\ScoresHtmlParserInterface;
+use TennisScoresGrabber\Contracts\HtmlProviderInterface;
+use TennisScoresGrabber\Contracts\HtmlParserInterface;
 
 class ScoresProvider implements ScoresProviderInterface
 {
     /**
-     * @var ScoresHtmlProviderInterface
+     * @var HtmlProviderInterface
      */
     private $scoresHtmlProvider;
 
     /**
-     * @var ScoresHtmlParserInterface
+     * @var HtmlParserInterface
      */
     private $scoresHtmlParser;
 
     /**
      * ScoresProvider constructor.
-     * @param ScoresHtmlProviderInterface $scoresHtmlProvider
-     * @param ScoresHtmlParserInterface $scoresHtmlParser
+     * @param HtmlProviderInterface $scoresHtmlProvider
+     * @param HtmlParserInterface $scoresHtmlParser
      */
     public function __construct(
-        ScoresHtmlProviderInterface $scoresHtmlProvider,
-        ScoresHtmlParserInterface $scoresHtmlParser
+        HtmlProviderInterface $scoresHtmlProvider,
+        HtmlParserInterface $scoresHtmlParser
     ) {
         $this->scoresHtmlProvider = $scoresHtmlProvider;
         $this->scoresHtmlParser = $scoresHtmlParser;
