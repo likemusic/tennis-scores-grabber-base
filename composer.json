@@ -14,6 +14,7 @@
   "type": "library",
   "require": {
     "php": ">=7.1.0",
+    "ext-dom": "*",
     "likemusic/simple-http-client": "dev-master"
   },
   "repositories": [

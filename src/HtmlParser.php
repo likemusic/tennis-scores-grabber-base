@@ -2,6 +2,8 @@
 
 namespace TennisScoresGrabber;
 
+use DOMDocument;
+use DOMXPath;
 use TennisScoresGrabber\Contracts\TableParserInterface;
 
 abstract class HtmlParser
@@ -32,9 +34,14 @@ abstract class HtmlParser
 
     abstract protected function getScoresTableSelector(): string;
 
-    private function getByXPath($scoresHtml,$scoresTableSelector)
+    private function getByXPath($html, $xPathQuery)
     {
-        return $this->getByXPath($scoresHtml, $scoresTableSelector);
+        $domDocument = new DOMDocument();
+        $domDocument->loadHTML($html);
+
+        $domXPath = new DOMXPath($domDocument);
+
+        return $domXPath->query($xPathQuery);
     }
 
     private function parseScoresTable($scoresTable)
