@@ -3,6 +3,7 @@
 namespace TennisScoresGrabber;
 
 use DOMDocument;
+use DOMElement;
 use DOMXPath;
 use TennisScoresGrabber\Contracts\TableParserInterface;
 
@@ -25,7 +26,7 @@ abstract class HtmlParser
         return $this->parseScoresTable($scoresTable);
     }
 
-    private function getScoresTable($scoresHtml)
+    private function getScoresTable($scoresHtml): DOMElement
     {
         $scoresTableSelector = $this->getScoresTableSelector();
 
@@ -53,7 +54,7 @@ abstract class HtmlParser
         return $domXPath->query($xPathQuery);
     }
 
-    private function parseScoresTable($scoresTable)
+    private function parseScoresTable(DOMElement $scoresTable)
     {
         return $this->tableParser->getScoresData($scoresTable);
     }
