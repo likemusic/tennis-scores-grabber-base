@@ -29,12 +29,19 @@ abstract class HtmlParser
     {
         $scoresTableSelector = $this->getScoresTableSelector();
 
-        return $this->getByXPath($scoresHtml, $scoresTableSelector);
+        return $this->getFirstByXPath($scoresHtml, $scoresTableSelector);
     }
 
     abstract protected function getScoresTableSelector(): string;
 
-    private function getByXPath($html, $xPathQuery)
+    private function getFirstByXPath(string $html, string $xPathQuery)
+    {
+        $domNodeList = $this->getByXPath($html, $xPathQuery);
+
+        return $domNodeList->item(0);
+    }
+
+    private function getByXPath(string $html, string $xPathQuery)
     {
         libxml_use_internal_errors(true);
         $domDocument = new DOMDocument();
