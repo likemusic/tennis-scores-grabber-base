@@ -4,10 +4,6 @@ namespace TennisScoresGrabber\Contracts;
 
 use DateTime;
 
-/**
- * Interface ScoresUrlProviderInterface
- * @package TennisScoreGrabber\Contracts
- */
 interface UrlProviderInterface
 {
     /**

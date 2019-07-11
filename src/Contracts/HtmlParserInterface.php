@@ -2,10 +2,6 @@
 
 namespace TennisScoresGrabber\Contracts;
 
-/**
- * Interface ScoresHtmlParserInterface
- * @package TennisScoreGrabber\Contracts
- */
 interface HtmlParserInterface
 {
     /**

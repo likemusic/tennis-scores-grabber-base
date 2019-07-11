@@ -7,10 +7,6 @@ use Likemusic\SimpleHttpClient\HttpClientInterface;
 use TennisScoresGrabber\Contracts\HtmlProviderInterface;
 use TennisScoresGrabber\Contracts\UrlProviderInterface;
 
-/**
- * Class ScoresHtmlProvider
- * @package TennisScoreGrabber
- */
 abstract class HtmlProvider implements HtmlProviderInterface
 {
     /**
