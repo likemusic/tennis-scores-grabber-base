@@ -13,7 +13,7 @@
   "license": "private",
   "type": "library",
   "require": {
-    "php": ">=7.1.0",
+    "php": ">=7.0.33",
     "ext-dom": "*",
     "ext-libxml": "*",
     "likemusic/simple-http-client": "dev-master"
